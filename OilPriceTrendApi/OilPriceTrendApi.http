@@ -1,0 +1,16 @@
+@OilPriceTrendApi_HostAddress = http://localhost:5106
+
+### Test GetOilPriceTrend endpoint
+POST {{OilPriceTrendApi_HostAddress}}/api/oilprice
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "method": "GetOilPriceTrend",
+  "params": {
+    "startDateISO8601": "1987-05-29",
+    "endDateISO8601": "1987-07-13"
+  }
+}
